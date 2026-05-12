@@ -1,0 +1,22 @@
+# Environment
+.env
+
+# Dependencies
+node_modules/
+
+# Tailwind output (generated file, don't commit)
+src/public/css/style.css
+
+# Docker volumes / database data
+postgres_data
+
+# OS
+.DS_Store
+Thumbs.database
+
+# Editor
+.vscode/
+.idea/
+
+# Uploads (user-generated content)
+src/public/uploads

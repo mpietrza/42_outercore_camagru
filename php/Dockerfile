@@ -11,3 +11,6 @@ RUN apk add --no-cache \
 RUN docker-php-ext-configure gd --with-freetype --with-jpeg && docker-php-ext-install pdo pdo_pgsql gd intl mbstring
 
 WORKDIR /var/www/html
+
+COPY --chown=www-data:www-data src/ /var/www/html/
+COPY php/www.conf /usr/local/etc/php-fpm.d/www.conf
